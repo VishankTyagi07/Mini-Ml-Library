@@ -7,7 +7,7 @@ Then i have used train test split function to split the data in a 80 /20 split, 
 
 Then the Logistic Regression class is called and the data is then predicted using the algorithm 
 
-The acuuracy of the algorithm is shown.
+The acuuracy of the algorithm  is shown.
 
 Then prediction gives the lables for the new data points by displaying it in a plot.
 '''

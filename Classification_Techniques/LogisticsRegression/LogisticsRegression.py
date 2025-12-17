@@ -12,9 +12,9 @@ Formulas used in the algorithms are
 
 3- gradient formulas - 
     dw= 1/N * ∑ (X.T*(y_pred-y))
-    db= 1/N * ∑ (y_pred-y)
+    db= 1/N * ∑ (y_pred-y) 
     then 
-    w=w-lr(learning rate of the algortihm)*dw
+    w=w-lr(learning  rate of the algortihm)*dw
     b=b-lr(learning rate of the algorithm)*db
 
 3- loss formula:
