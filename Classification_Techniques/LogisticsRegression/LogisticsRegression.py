@@ -1,3 +1,36 @@
+'''
+This Class file is my work of creating a Logistic Regression algorithm from scratch without using scikit learn
+This algorithm is made by using only numpy library and mathematics 
+
+Formulas used in the algorithms are
+
+1- Sigmoid Formula
+    1/1+e^-x
+
+2- Linear line formmula
+    Y = weight*X + bias
+
+3- gradient formulas - 
+    dw= 1/N * ∑ (X.T*(y_pred-y))
+    db= 1/N * ∑ (y_pred-y)
+    then 
+    w=w-lr(learning rate of the algortihm)*dw
+    b=b-lr(learning rate of the algorithm)*db
+
+3- loss formula:
+    -1 / N * ∑ (y * log (p(y) )) + (1 - y) * log(1 - ( p(y) ))
+
+In the algorithm there are two main functions 
+fit() and predict()
+in fit()
+The Data set is fitted in the algorithm using the forumlas.
+
+in predict
+I have made the predictions in the predict function using the condition 
+which says that if the data point lies below 0.5 it is classified as 0 and if it is more than 0.5 is it classified 1
+
+(The use of the algorithm is in the train.py file)
+'''
 import numpy as np
 
 def sigmoid(x):
