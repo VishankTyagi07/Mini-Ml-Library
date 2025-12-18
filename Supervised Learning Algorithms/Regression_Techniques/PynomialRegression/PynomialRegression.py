@@ -1,3 +1,45 @@
+'''
+This Class file is my work of creating a Polynomial regression algorithm from scratch without using scikit learn
+This algorithm is made by using only numpy library and mathematics 
+
+Formulas used in the algorithms are
+
+1- formula - y= w*x+b, 
+where,
+y= dependent variable
+x= independent variable
+w= weight of the data point
+b= bias of the data point
+
+2- gradient formulas - 
+dw= 2/N * ∑ (X.T*(y_pred-y))
+then 
+w=w-lr(learning rate of the algortihm)*dw
+
+In the algorithm there are three main classes 
+Polynomial Features , Standard Scaler and polynomial regression
+
+In Polynomial features class
+The X array shape of the data set is transformed in another array which is filled by ones and
+then by using the degree a matrix with new values is formed
+
+In Standard Scaler class
+in fit()
+The X is fitted and then the mean and standard deviation of the columns is found out for normalization
+in transform()
+The X matrix is copied and a normalized matrix is created using normalization formula
+
+In polynomial regression class
+in fit()
+The dataset is fitted using the the previous classes functions
+then by using the gradient funtion on the normalized matrix  the loop is iterated till the epoches are finished for training the data.
+
+in Predict()
+The test data is used to make predictions
+
+these functions are used in plots for regression visualization
+(The use of the algorithm is in the train.py file)
+'''
 import numpy as np
 class Polynomialfeatures:
     def __init__(self,degree):
