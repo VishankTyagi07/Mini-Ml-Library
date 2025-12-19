@@ -1,15 +1,16 @@
-'''
-In this File The use of  Linear regression algorithm is demonstrated
+"""
+This file demonstrates the implementation and visualization of the
+Linear Regression algorithm using a synthetic dataset generated
+with sklearn.
 
-First uing sklearn i have imported datasets class which gives me a random dataset values
-and by using make regression function i have used 200 data samples and 2 featues ,
-with some noise to make the model robust in training and given a random state for reproducibility.
-
-Then i have used train test split function to split the data in a 80 /20 split, also with random state for reproducibility
-
-Then the linear regression class is called and the data is then predicted using the algorithm 
-and the data is then shown using matplotlib.
-'''
+Steps:
+1. Generate regression dataset
+2. Select features for visualization
+3. Split data into train and test sets
+4. Train custom Linear Regression model
+5. Predict output values
+6. Plot regression line and data points
+"""
 from LinearRegression import LinearRegression
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -44,7 +45,7 @@ plt.figure(figsize=(6,6))
 plt.scatter(y_test, y_pred, color="blue", s=20)
 plt.xlabel("Actual y")
 plt.ylabel("Predicted y")
-plt.title("Actual vs Predicted")
+plt.title("Linear Regression: Actual vs Predicted")
 plt.plot([y_test.min(), y_test.max()],
          [y_test.min(), y_test.max()],
          color="black", linestyle="--")

@@ -1,16 +1,16 @@
-'''
-In this File The use of Logistic Regression algorithm is demonstrated
+"""
+This file demonstrates the implementation and visualization of the
+Logistic Regression algorithm using the Iris dataset.
 
-First i Have taken X and y arrays with iris dataset from sklearn for 2 features
-
-Then i have used train test split function to split the data in a 80 /20 split, also with random state for reproducibility
-
-Then the Logistic Regression class is called and the data is then predicted using the algorithm 
-
-The acuuracy of the algorithm  is shown.
-
-Then prediction gives the lables for the new data points by displaying it in a plot.
-'''
+Steps:
+1. Load Iris dataset
+2. Select two features for visualization
+3. Split data into train and test sets
+4. Train custom Logistic Regression model
+5. Predict test labels
+6. Calculate accuracy
+7. Plot decision boundary and data points
+"""
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris

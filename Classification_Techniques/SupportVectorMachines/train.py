@@ -1,16 +1,16 @@
-'''
-In this File The use of Support Vector Machine algorithm is demonstrated
+"""
+This file demonstrates the implementation and visualization of the
+Support Vector Machine (SVM) algorithm using a dataset from sklearn.
 
-First i Have taken X and y arrays with dataset from sklearn for 2 features
-
-Then i have used train test split function to split the data in a 80 /20 split, also with random state for reproducibility
-
-Then the SVM class is called and the data is then predicted using the algorithm 
-
-The acuuracy of the algorithm  is shown.
-
-Then prediction gives the lables for the new data points by displaying it in a plot.
-'''
+Steps:
+1. Load dataset
+2. Select two features for visualization
+3. Split data into train and test sets
+4. Train custom SVM model
+5. Predict test labels
+6. Calculate accuracy
+7. Plot decision boundary and margins
+"""
 
 from sklearn.model_selection import train_test_split
 from sklearn import datasets
@@ -64,7 +64,7 @@ def visualize_svm():
     x1_min = np.amin(X[:, 1])
     x1_max = np.amax(X[:, 1])
     ax.set_ylim([x1_min - 3, x1_max + 3])
-
+    plt.title("SVM Classification Plot")
     plt.show()
 
 visualize_svm()
