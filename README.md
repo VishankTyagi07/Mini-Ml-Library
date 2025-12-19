@@ -134,12 +134,21 @@ All dependencies are listed in `requirements.txt`.
 
 ---
 
-## Author
+## Contact
+**Vishank Tyagi**
+- Email: tyagivishank1234@gmail.com
+- LinkedIn: https://www.linkedin.com/in/vishank-t/
+- GitHub: https://github.com/VishankTyagi07
+  
+---
 
-**Vishank Tyagi**  
-Engineering Student | Data Science & Machine Learning  
-GitHub: https://github.com/VishankTyagi07
+
+## Star This Repository
+If you found this project helpful or interesting,please consider giving it a star! It helps others to discover the project.
+
+**Built with :heart: by Vishank Tyagi | December 2025**
 
 ---
 
 **Mini ML Library — Built to understand machine learning from first principles**
+
